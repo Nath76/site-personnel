@@ -10,9 +10,7 @@ export default function Contact() {
             joindre via les coordonnées ci-dessous.
           </p>
           <ul className="contact-list">
-            <li>nathalie.ka@interieur.gouv.fr</li>
-            <li>Paris, France</li>
-            <li>linkedin.com/in/nathalieka</li>
+          <li>https://www.linkedin.com/in/nathaliekakpo</li>
           </ul>
         </div>
 
