@@ -33,29 +33,38 @@ export default function Home({ go }) {
         </p>
       </section>
 
-      <section className="threecards">
-        <article onClick={() => go("socio")}>
-          <div className="cardNumber">01</div>
-          <h3>Sociologie urbaine</h3>
-          <p>
-            Enquêtes ethnographiques, mondes urbains, migrations et ségrégations.
-          </p>
+      <section className="cards-raised">
+        <article className="feature-card" onClick={() => go("socio")}>
+          <div className="feature-card-body">
+            <div className="feature-number">01</div>
+            <h3>Sociologie urbaine</h3>
+            <p>
+              Enquêtes ethnographiques, mondes urbains, migrations et ségrégations.
+            </p>
+            <span className="card-link">Explorer →</span>
+          </div>
         </article>
 
-        <article onClick={() => go("mediation")}>
-          <div className="cardNumber">02</div>
-          <h3>Médiation & dispositifs</h3>
-          <p>
-            Techniques, cognition distribuée et production sociale du sens.
-          </p>
+        <article className="feature-card" onClick={() => go("mediation")}>
+          <div className="feature-card-body">
+            <div className="feature-number">02</div>
+            <h3>Médiation & dispositifs</h3>
+            <p>
+              Techniques, cognition distribuée et production sociale du sens.
+            </p>
+            <span className="card-link">Explorer →</span>
+          </div>
         </article>
 
-        <article onClick={() => go("veille")}>
-          <div className="cardNumber">03</div>
-          <h3>Veille stratégique</h3>
-          <p>
-            Dispositifs de mise en visibilité de l’action publique et de ses transformations.
-          </p>
+        <article className="feature-card" onClick={() => go("veille")}>
+          <div className="feature-card-body">
+            <div className="feature-number">03</div>
+            <h3>Veille stratégique</h3>
+            <p>
+              Dispositifs de mise en visibilité de l’action publique et de ses transformations.
+            </p>
+            <span className="card-link">Explorer →</span>
+          </div>
         </article>
       </section>
     </main>
