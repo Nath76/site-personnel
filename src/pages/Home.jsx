@@ -10,7 +10,7 @@ export default function Home({ go }) {
             comment les dispositifs produisent du sens, organisent les circulations
             et transforment notre rapport au monde.
           </p>
-          <button onClick={() => go("about")}>Explorer la trajectoire</button>
+          <button onClick={() => go("about")}>A propos</button>
         </div>
 
         <div className="heroImage" />
