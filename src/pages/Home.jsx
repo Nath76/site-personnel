@@ -117,13 +117,11 @@ export default function Home({ go }) {
           traitement, sa circulation et son appréhension. La médiation opère toujours un travail sur
           le sens.
         </p>
-        <div className="signature">Nathalie Ka</div>
+        <div className="signature">Nathalie Kakpo</div>
       </section>
 
       <footer className="footer section">
-        <div>nathalie.ka@interieur.gouv.fr</div>
-        <div>Paris, France</div>
-        <div>linkedin.com/in/nathalieka</div>
+      <div>https://www.linkedin.com/in/nathaliekakpo</div>
       </footer>
     </main>
   )
