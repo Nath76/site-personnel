@@ -32,7 +32,7 @@ export default function App() {
     <div className="site-shell">
       <header className="topbar">
         <button className="brand" onClick={() => setPage('home')}>
-          <span className="brand-name">NATHALIE KA</span>
+          <span className="brand-name">NATHALIE KAKPO</span>
           <span className="brand-divider" />
           <span className="brand-tagline">Médiation, dispositifs et action publique</span>
         </button>
