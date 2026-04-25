@@ -25,9 +25,8 @@ export default function Mediation() {
           <p className="eyebrow">Axe 2</p>
           <h1>Médiation & dispositifs</h1>
           <p>
-            Une réflexion sur les médiations comme opérations sur le sens, sur les dispositifs
-            comme agencements sociotechniques et sur leurs usages dans l’enquête, la connaissance
-            et l’action.
+              Une réflexion sur l’enquête de terrain, la sécurité urbaine et les
+  dispositifs qui transforment l’observation en connaissance partageable.
           </p>
         </div>
 
@@ -36,8 +35,70 @@ export default function Mediation() {
         </div>
       </section>
 
-      <section className="mediation-part part-one">
-        <div className="part-number">1</div>
+      <section className="urban-security-teaching">
+  <div className="teaching-copy">
+    <p className="section-label">Enseignement</p>
+
+    <h2>Enseigner la sécurité urbaine par l’enquête de terrain</h2>
+
+    <p className="meta">
+      Politecnico di Milano — Faculté d’architecture<br />
+      Atelier d’enquête urbaine, octobre–décembre 2009
+    </p>
+
+    <p>
+      Cet enseignement proposait aux étudiants d’architecture et d’urbanisme
+      d’aborder la sécurité urbaine non comme une question strictement
+      policière, mais comme une expérience située des espaces publics :
+      usages ordinaires, signes de dégradation, perceptions habitantes,
+      conflits d’appropriation et conditions de coprésence.
+    </p>
+
+    <p>
+      L’enquête de terrain devenait un outil pédagogique central : observer,
+      catégoriser, cartographier puis discuter les situations urbaines afin de
+      transformer des indices dispersés en diagnostic partageable.
+    </p>
+
+    <div className="teaching-points">
+      <div>
+        <strong>Observer</strong>
+        <span>les usages, les présences et les vulnérabilités ordinaires.</span>
+      </div>
+
+      <div>
+        <strong>Qualifier</strong>
+        <span>les signes faibles : dégradation, abandon, conflits d’usage.</span>
+      </div>
+
+      <div>
+        <strong>Cartographier</strong>
+        <span>les situations pour rendre visibles des dynamiques locales.</span>
+      </div>
+
+      <div>
+        <strong>Problématiser</strong>
+        <span>la sécurité comme relation entre espace, usages et vigilance.</span>
+      </div>
+    </div>
+
+    <div className="tags compact-tags">
+      <span className="tag">Sécurité urbaine</span>
+      <span className="tag">Jane Jacobs</span>
+      <span className="tag">Eyes on the street</span>
+      <span className="tag">Observation</span>
+      <span className="tag">Cartographie</span>
+      <span className="tag">Pédagogie de terrain</span>
+    </div>
+  </div>
+
+  <div className="teaching-visual">
+    <img
+      src="/site-personnel/images/cormano-map.jpg"
+      alt="Carte d’analyse urbaine produite par les étudiants à Cormano"
+    />
+  </div>
+</section>
 
         <div className="part-image">
           <img
