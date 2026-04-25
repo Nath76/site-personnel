@@ -644,6 +644,72 @@ font-family:'Cormorant Garamond',serif;
 font-size:2rem;
 line-height:1.25;
 }
+/* =========================
+ENSEIGNER LA SÉCURITÉ URBAINE
+========================= */
+
+.urban-security-teaching{
+display:grid;
+grid-template-columns:1.15fr .95fr;
+gap:56px;
+align-items:center;
+
+background:#fff;
+border:1px solid var(--line);
+border-radius:30px;
+
+padding:42px;
+margin-top:34px;
+
+box-shadow:var(--shadow);
+}
+
+.teaching-visual img{
+width:100%;
+display:block;
+border-radius:16px;
+box-shadow:
+0 16px 40px rgba(22,35,58,.12);
+}
+
+.teaching-copy h2{
+font-family:"Cormorant Garamond", serif;
+font-size:clamp(2.3rem,4vw,3.4rem);
+line-height:1;
+margin:0 0 20px;
+color:var(--ink);
+}
+
+.teaching-copy p{
+font-size:1.03rem;
+line-height:1.75;
+}
+
+.teaching-points{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin:28px 0 30px;
+}
+
+.teaching-points div{
+background:var(--blue-soft);
+padding:20px;
+border-radius:18px;
+}
+
+.teaching-points strong{
+display:block;
+margin-bottom:8px;
+font-size:1rem;
+color:var(--ink);
+}
+
+.teaching-points span{
+font-size:.95rem;
+line-height:1.5;
+color:var(--muted);
+}
 
 /* =========================
 AXE 1 — PUBLICATIONS
