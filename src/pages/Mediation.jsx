@@ -106,7 +106,6 @@ export default function Mediation() {
       </section>
 
       <section className="mediation-part part-two">
-        <div className="part-number">2</div>
 
         <div className="thinking-text">
           <h2>Penser les dispositifs</h2>
@@ -136,7 +135,6 @@ export default function Mediation() {
       </section>
 
       <section className="mediation-part part-three">
-        <div className="part-number">3</div>
         <h2>Mémoires de master</h2>
 
         <div className="memoire-row">
