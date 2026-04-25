@@ -734,7 +734,7 @@ AXE 1 — PUBLICATIONS
   object-fit:cover;
   object-position:center top;
   border-radius:16px;
-  background:#f1eef4;
+  background:linear-gradient(135deg,#f1edf7,#e4daf2);
 }
 
 .publication-item h3{
