@@ -130,7 +130,7 @@ export default function Sociologie() {
           <h2>Chapitres d’ouvrages</h2>
         </div>
 
-        <div className="book-shelf">
+               <div className="book-shelf">
           {chapitres.map(item => (
             <article key={item.title} className="book-shelf-item">
               <img src={item.image} alt={item.title} />
@@ -140,6 +140,49 @@ export default function Sociologie() {
         </div>
       </section>
 
+      <section className="publication-section international-section">
+        <div className="section-title-row">
+          <h2>Ouvrage international</h2>
+        </div>
+
+        <div className="international-work">
+          <div className="intl-cover">
+            <img
+              src={internationalWork.imageCover}
+              alt={internationalWork.title}
+            />
+          </div>
+
+          <div className="intl-copy">
+            <p className="section-label">Comparative urban studies</p>
+
+            <h3>{internationalWork.title}</h3>
+            <h4>{internationalWork.subtitle}</h4>
+
+            <p>
+              Contribution sur Genève dans un ouvrage collectif sur les
+              innovations sociales et les dynamiques de cohésion urbaine en
+              Europe.
+            </p>
+
+            <a
+              href={internationalWork.link}
+              target="_blank"
+              rel="noreferrer"
+              className="card-link"
+            >
+              Consulter le chapitre →
+            </a>
+          </div>
+
+          <div className="intl-page">
+            <img
+              src={internationalWork.imageInside}
+              alt="Première page Geneva introduction"
+            />
+          </div>
+        </div>
+      </section>
+
     </main>
   )
-}
