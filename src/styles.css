@@ -788,7 +788,54 @@ AXE 1 — PUBLICATIONS
   margin:16px 0 0;
   color:var(--ink);
 }
+.book-shelf-item h3{
+font-family:"Cormorant Garamond", serif;
+font-size:1.35rem;
+line-height:1.1;
+margin:16px 0 0;
+color:var(--ink);
+}
 
+.international-work{
+display:grid;
+grid-template-columns:260px 1fr 260px;
+gap:34px;
+align-items:start;
+background:#fff;
+border:1px solid var(--line);
+border-radius:28px;
+padding:30px;
+box-shadow:var(--shadow);
+}
+
+.intl-cover img,
+.intl-page img{
+width:100%;
+display:block;
+border-radius:12px;
+box-shadow:var(--shadow);
+}
+
+.intl-page img{
+object-fit:cover;
+object-position:top;
+}
+
+.intl-copy h3{
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+margin:0 0 12px;
+}
+
+.intl-copy h4{
+font-size:1.2rem;
+margin:0 0 18px;
+}
+
+
+ /* =========================
+ RESPONSIVE AXES
+ ========================= */
 
 /* =========================
 RESPONSIVE AXES
