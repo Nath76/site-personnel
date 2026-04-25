@@ -832,11 +832,6 @@ font-size:1.2rem;
 margin:0 0 18px;
 }
 
-
- /* =========================
- RESPONSIVE AXES
- ========================= */
-
 /* =========================
 RESPONSIVE AXES
 ========================= */
@@ -879,11 +874,12 @@ RESPONSIVE AXES
 
 @media(max-width:800px){
 
-  .publication-lead,
-  .publication-item,
-  .book-shelf{
-    grid-template-columns:1fr;
-  }
+.publication-lead,
+.publication-item,
+.book-shelf,
+.international-work{
+grid-template-columns:1fr;
+}
 
   .lead-cover{
     max-width:320px;
