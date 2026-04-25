@@ -36,6 +36,14 @@ const chapitres = [
   }
 ]
 
+const internationalWork = {
+  title: "Social Innovations for Social Cohesion",
+  subtitle: "Geneva — Introduction",
+  imageCover: "/site-personnel/images/social-innovations-cover.jpg",
+  imageInside: "/site-personnel/images/geneva-introduction.jpg",
+  link: "https://wilcoproject.com/book/chapters/geneva-introduction/"
+}
+
 export default function Sociologie() {
   return (
     <main className="page-main section publications-page">
@@ -186,3 +194,4 @@ export default function Sociologie() {
 
     </main>
   )
+}
