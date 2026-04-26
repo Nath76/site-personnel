@@ -6,6 +6,7 @@ const dispositifs = [
     text:
       "Une exploration internationale des dispositifs publics de veille, pensée pour rendre lisibles leurs périmètres, leurs méthodes et leurs formes de circulation des connaissances.",
     link: "https://nath76.github.io/story-idea/#tab3",
+    linkLabel: "Voir le dispositif",
   },
   {
     title: "Relire cinq ans de bulletin de veille",
@@ -13,6 +14,9 @@ const dispositifs = [
     image: "/site-personnel/images/powerbi-bulletin-mensuel.jpg",
     text:
       "Un dispositif de relecture des contenus produits : volumes, thèmes, focus éditoriaux et évolutions d’un bulletin de veille coanimé pendant cinq ans.",
+    link:
+      "https://app.powerbi.com/view?r=eyJrIjoiZGU0MzgyNGEtOWM0My00OGVkLTgyYTItMmJiMTAzZDk3NWIwIiwidCI6ImI1ZWNkMTJhLTQ5YzAtNGQ2MC04OTI5LWZjOTQwMzA1MGRkMyJ9",
+    linkLabel: "Explorer le tableau de bord",
   },
   {
     title: "Visualiser les sujets traités",
@@ -20,6 +24,9 @@ const dispositifs = [
     image: "/site-personnel/images/powerbi-carte-monde.jpg",
     text:
       "Une carte mondiale permettant d’identifier les espaces, pays et régions associés aux sujets suivis dans le bulletin.",
+    link:
+      "https://app.powerbi.com/view?r=eyJrIjoiZGU0MzgyNGEtOWM0My00OGVkLTgyYTItMmJiMTAzZDk3NWIwIiwidCI6ImI1ZWNkMTJhLTQ5YzAtNGQ2MC04OTI5LWZjOTQwMzA1MGRkMyJ9",
+    linkLabel: "Explorer la cartographie",
   },
 ]
 
@@ -30,7 +37,9 @@ const explorations = [
     image: "/site-personnel/images/ign-intelligence-territoriale.jpg",
     text:
       "Une carte narrative sur l’intelligence territoriale, conçue comme support d’exploration, de comparaison et d’aide à la réflexion.",
-    link: "https://macarte.ign.fr/carte/XxwGzy/Clinique-de-l-individu-clinique-du-territoire",
+    link:
+      "https://macarte.ign.fr/carte/XxwGzy/Clinique-de-l-individu-clinique-du-territoire",
+    linkLabel: "Voir la carte",
   },
 ]
 
@@ -43,14 +52,37 @@ const formes = [
       "Une forme éditoriale destinée à sélectionner, hiérarchiser et reformuler des signaux pour les rendre exploitables dans une logique d’action.",
   },
   {
-    title: "Les îles françaises dans les coopérations de recherche de l’océan Indien",
+    title:
+      "Les îles françaises dans les coopérations de recherche de l’océan Indien",
     kicker: "Analyse courte",
     image: "/site-personnel/images/cep-ocean-indien.jpg",
     text:
       "Une publication synthétique qui présente l’essentiel des réflexions sur les coopérations de recherche agricoles et agroalimentaires dans l’océan Indien, selon une approche prospective, stratégique ou évaluative.",
-    link: "https://agriculture.gouv.fr/les-iles-francaises-dans-les-cooperations-de-recherche-de-locean-indien-analyse-ndeg213",
+    link:
+      "https://agriculture.gouv.fr/les-iles-francaises-dans-les-cooperations-de-recherche-de-locean-indien-analyse-ndeg213",
+    linkLabel: "Lire la publication",
   },
 ]
+
+function ProjectCard({ item, wide = false }) {
+  return (
+    <article className={`veille-card ${wide ? "veille-card-wide" : ""}`}>
+      <img src={item.image} alt={item.title} />
+
+      <div>
+        <p className="project-kicker">{item.kicker}</p>
+        <h3>{item.title}</h3>
+        <p>{item.text}</p>
+
+        {item.link && (
+          <a href={item.link} target="_blank" rel="noreferrer">
+            {item.linkLabel}
+          </a>
+        )}
+      </div>
+    </article>
+  )
+}
 
 export default function Veille() {
   return (
@@ -58,20 +90,24 @@ export default function Veille() {
       <section className="veille-hero">
         <div>
           <p className="eyebrow">Axe 3</p>
+
           <h1>Veille stratégique & anticipation</h1>
+
           <p className="hero-lead">
-            Comment concevoir des dispositifs qui rendent les résultats de la veille
-            visibles et intelligibles ?
+            Comment concevoir des dispositifs qui rendent les résultats de la
+            veille visibles et intelligibles ?
           </p>
+
           <p>
-            La veille n’est pas seulement une activité de collecte. Elle suppose de
-            concevoir des dispositifs capables de rendre des signaux dispersés plus
-            lisibles, comparables et exploitables.
+            La veille n’est pas seulement une activité de collecte. Elle suppose
+            de concevoir des dispositifs capables de rendre des signaux dispersés
+            plus lisibles, comparables et exploitables.
           </p>
+
           <p>
-            Mes travaux portent sur cette mise en forme de la veille : dispositifs
-            d’exploration, tableaux de bord réflexifs, cartes narratives et formes
-            éditoriales pour l’action.
+            Mes travaux portent sur cette mise en forme de la veille :
+            dispositifs d’exploration, tableaux de bord réflexifs, cartes
+            narratives et formes éditoriales pour l’action.
           </p>
         </div>
 
@@ -86,30 +122,23 @@ export default function Veille() {
       <section className="veille-section">
         <div className="veille-section-head">
           <p className="section-label">1</p>
-          <h2>Concevoir des dispositifs pour rendre intelligibles les résultats de la veille</h2>
+
+          <h2>
+            Concevoir des dispositifs pour rendre intelligibles les résultats de
+            la veille
+          </h2>
+
           <p>
-            Cette première séquence rassemble des dispositifs conçus pour rendre la
-            veille lisible : visualiser des contenus, relire des bulletins produits
-            dans le temps, comparer des thématiques et donner une forme partageable
-            aux résultats de l’observation.
+            Cette première séquence rassemble des dispositifs conçus pour rendre
+            la veille lisible : visualiser des contenus, relire des bulletins
+            produits dans le temps, comparer des thématiques et donner une forme
+            partageable aux résultats de l’observation.
           </p>
         </div>
 
         <div className="veille-grid">
           {dispositifs.map((item) => (
-            <article className="veille-card" key={item.title}>
-              <img src={item.image} alt={item.title} />
-              <div>
-                <p className="project-kicker">{item.kicker}</p>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                {item.link && (
-                  <a href={item.link} target="_blank" rel="noreferrer">
-                    Voir le dispositif
-                  </a>
-                )}
-              </div>
-            </article>
+            <ProjectCard item={item} key={item.title} />
           ))}
         </div>
       </section>
@@ -117,7 +146,9 @@ export default function Veille() {
       <section className="veille-section">
         <div className="veille-section-head">
           <p className="section-label">2</p>
+
           <h2>Des dispositifs pour explorer</h2>
+
           <p>
             Certains dispositifs visuels sont conçus comme des instruments
             d’exploration : ils permettent d’examiner une situation complexe, de
@@ -127,19 +158,7 @@ export default function Veille() {
 
         <div className="veille-grid single">
           {explorations.map((item) => (
-            <article className="veille-card veille-card-wide" key={item.title}>
-              <img src={item.image} alt={item.title} />
-              <div>
-                <p className="project-kicker">{item.kicker}</p>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                {item.link && (
-                  <a href={item.link} target="_blank" rel="noreferrer">
-                    Voir la carte
-                  </a>
-                )}
-              </div>
-            </article>
+            <ProjectCard item={item} key={item.title} wide />
           ))}
         </div>
       </section>
@@ -147,7 +166,9 @@ export default function Veille() {
       <section className="veille-section">
         <div className="veille-section-head">
           <p className="section-label">3</p>
+
           <h2>Des formes éditoriales pour l’action</h2>
+
           <p>
             La veille devient stratégique lorsqu’elle trouve des formats capables
             d’aider à comprendre, anticiper et agir : digests, notes courtes,
@@ -158,28 +179,16 @@ export default function Veille() {
 
         <div className="veille-grid">
           {formes.map((item) => (
-            <article className="veille-card" key={item.title}>
-              <img src={item.image} alt={item.title} />
-              <div>
-                <p className="project-kicker">{item.kicker}</p>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                {item.link && (
-                  <a href={item.link} target="_blank" rel="noreferrer">
-                    Lire la publication
-                  </a>
-                )}
-              </div>
-            </article>
+            <ProjectCard item={item} key={item.title} />
           ))}
         </div>
       </section>
 
       <section className="veille-final-quote">
         <p>
-          La veille stratégique est une pratique de transformation : convertir des
-          signaux dispersés en connaissances visibles, intelligibles et utiles pour
-          l’action.
+          La veille stratégique est une pratique de transformation : convertir
+          des signaux dispersés en connaissances visibles, intelligibles et
+          utiles pour l’action.
         </p>
       </section>
     </main>
