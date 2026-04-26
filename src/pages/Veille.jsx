@@ -20,7 +20,7 @@ linkLabel:"Explorer le tableau de bord",
 {
 title:"Visualiser les sujets traités",
 kicker:"Cartographie des contenus",
-image:"/site-personnel/images/powerbi-carte-monde.jpg",
+image: "/site-personnel/images/world-topics-map.jpg",
 imageClass:"image-cover image-map-powerbi",
 text:"Une carte mondiale permettant d’identifier les espaces, pays et régions associés aux sujets suivis dans le bulletin.",
 link:"https://app.powerbi.com/view?r=eyJrIjoiZGU0MzgyNGEtOWM0My00OGVkLTgyYTItMmJiMTAzZDk3NWIwIiwidCI6ImI1ZWNkMTJhLTQ5YzAtNGQ2MC04OTI5LWZjOTQwMzA1MGRkMyJ9",
