@@ -1083,3 +1083,10 @@ h1, h2, h3 {
  object-fit:contain;
  object-position:center;
 }
+.image-cover.image-map-powerbi {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center center !important;
+  transform: scale(1.9);
+}
