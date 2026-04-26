@@ -38,7 +38,7 @@ export default function Home() {
       number: "02",
       title: "Médiation & dispositifs",
       text: "Techniques, cognition distribuée et production sociale du sens.",
-      image: "/site-personnel/images/mediation-visual.jpg",
+      image: image: "/site-personnel/images/dispositif-network.jpg",
       alt: "Visualisation autour de la médiation",
     },
     {
