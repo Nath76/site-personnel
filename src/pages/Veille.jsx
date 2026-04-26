@@ -69,7 +69,7 @@ function ProjectCard({ item, wide = false }) {
     <article className={`veille-card ${wide ? "veille-card-wide" : ""}`}>
       <img src={item.image} alt={item.title} />
 
-      <div>
+      <div className="veille-card-body">
         <p className="project-kicker">{item.kicker}</p>
         <h3>{item.title}</h3>
         <p>{item.text}</p>
@@ -88,7 +88,7 @@ export default function Veille() {
   return (
     <main className="page-main section veille-page">
       <section className="veille-hero">
-        <div>
+        <div className="veille-hero-copy">
           <p className="eyebrow">Axe 3</p>
 
           <h1>Veille stratégique & anticipation</h1>
@@ -121,7 +121,7 @@ export default function Veille() {
 
       <section className="veille-section">
         <div className="veille-section-head">
-          <p className="section-label">1</p>
+          <p className="section-label">Dispositifs de veille</p>
 
           <h2>
             Concevoir des dispositifs pour rendre intelligibles les résultats de
@@ -145,7 +145,7 @@ export default function Veille() {
 
       <section className="veille-section">
         <div className="veille-section-head">
-          <p className="section-label">2</p>
+          <p className="section-label">Exploration</p>
 
           <h2>Des dispositifs pour explorer</h2>
 
@@ -165,7 +165,7 @@ export default function Veille() {
 
       <section className="veille-section">
         <div className="veille-section-head">
-          <p className="section-label">3</p>
+          <p className="section-label">Formes éditoriales</p>
 
           <h2>Des formes éditoriales pour l’action</h2>
 
