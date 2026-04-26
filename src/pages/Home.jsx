@@ -66,25 +66,42 @@ export default function Home() {
           />
         </div>
       </section>
+<section className="home-manifesto">
 
-      <section className="home-manifesto">
-        <p className="section-kicker">Fil directeur</p>
+<p className="section-kicker manifesto-title">
+Fil directeur
+</p>
 
-        <h2>Équipement cognitif des politiques publiques</h2>
+<p>
+Mon travail participe à l’équipement cognitif des politiques publiques.
+La veille y est conçue comme une activité d’interprétation, de mise en
+relation et de problématisation orientée vers l’action. Elle vise à
+attirer l’attention des décideurs sur certaines évolutions de
+l’environnement des politiques publiques — signaux émergents,
+controverses, déplacements d’acteurs, transformations sociales — et à
+produire sur ces dynamiques des savoirs opératoires pour aider la
+décision et concourir à l’efficacité de l’action publique.
+</p>
 
-        <p>
-          Mon travail participe à l’équipement cognitif des politiques publiques.
-          La veille y est conçue comme une activité d’interprétation, de mise en
-          relation et de problématisation orientée vers l’action.
-        </p>
+<p>
+Ce travail s’appuie sur des dispositifs numériques — cartographies,
+tableaux de bord, outils de veille, formes éditoriales — conçus comme
+des équipements cognitifs rendant les phénomènes plus visibles,
+comparables et discutables. Cette activité relève d’une double
+médiation : éclairer les décideurs sur les évolutions des sociétés et,
+dans l’autre sens, rendre plus intelligibles aux citoyens les ressorts
+et contenus de l’action publique.
+</p>
 
-        <p>
-          Elle s’appuie sur des dispositifs numériques — cartographies, tableaux
-          de bord, outils de veille, formes éditoriales — conçus comme des
-          équipements cognitifs rendant les phénomènes plus visibles, comparables
-          et discutables.
-        </p>
-      </section>
+<p>
+Elle contribue ainsi à une activité d’influence entendue non comme
+action persuasive, mais comme circulation orientée de connaissances :
+faire remonter des évolutions sociales vers les décideurs, mettre en
+discussion certains enjeux dans l’espace public et rendre plus
+intelligibles les contenus de l’action publique.
+</p>
+
+</section>
 
       <section className="trajectory-card">
         <div className="trajectory-intro">
