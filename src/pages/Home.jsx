@@ -1,8 +1,8 @@
 export default function Home({ go }) {
   return (
     <main>
-      <section className="hero section">
-        <div className="hero-copy">
+      <section className="home-hero section">
+        <div className="home-hero-copy">
           <h1>Médiation, dispositifs et action publique.</h1>
 
           <p className="lead">
@@ -12,16 +12,30 @@ export default function Home({ go }) {
             et transforment notre rapport au monde.
           </p>
 
-          <div className="hero-actions">
-            <button className="primary-btn" onClick={() => go("about")}>
-              À propos
-            </button>
-          </div>
+          <button className="primary-btn" onClick={() => go("about")}>
+            À propos
+          </button>
         </div>
 
-        <div className="hero-visual">
-          <img src="/site-personnel/images/hero-city.jpg" alt="" />
-        </div>
+        <aside className="home-about-card">
+          <img src="/site-personnel/images/photo-nathalie.jpg" alt="Nathalie Kakpo" />
+
+          <div>
+            <p className="section-label">À propos</p>
+            <p>
+              Sociologue de formation, j’articule depuis plus de quinze ans
+              recherche, médiation et conception de dispositifs au service de
+              l’action publique.
+            </p>
+            <p>
+              Mon parcours relie enquêtes de terrain, médiation entre mondes
+              professionnels et académiques, et conception d’outils de veille.
+            </p>
+            <button className="text-btn" onClick={() => go("about")}>
+              En savoir plus →
+            </button>
+          </div>
+        </aside>
       </section>
 
       <section className="trajectory section section-card">
@@ -62,29 +76,27 @@ export default function Home({ go }) {
       </section>
 
       <section className="cards-raised section">
-        <article className="feature-card" onClick={() => go("socio")}>
+        <article className="feature-card feature-card-split" onClick={() => go("socio")}>
           <div className="feature-card-body">
             <div className="feature-number">01</div>
             <h3>Sociologie urbaine</h3>
-            <p>
-              Enquêtes ethnographiques, mondes urbains, migrations et ségrégations.
-            </p>
+            <p>Enquêtes ethnographiques, mondes urbains, migrations et ségrégations.</p>
             <span className="card-link">Explorer →</span>
           </div>
+          <img src="/site-personnel/images/hero-city.jpg" alt="" />
         </article>
 
-        <article className="feature-card" onClick={() => go("mediation")}>
+        <article className="feature-card feature-card-split" onClick={() => go("mediation")}>
           <div className="feature-card-body">
             <div className="feature-number">02</div>
             <h3>Médiation & dispositifs</h3>
-            <p>
-              Techniques, cognition distribuée et production sociale du sens.
-            </p>
+            <p>Techniques, cognition distribuée et production sociale du sens.</p>
             <span className="card-link">Explorer →</span>
           </div>
+          <img src="/site-personnel/images/mediation-visual.jpg" alt="" />
         </article>
 
-        <article className="feature-card" onClick={() => go("veille")}>
+        <article className="feature-card feature-card-split" onClick={() => go("veille")}>
           <div className="feature-card-body">
             <div className="feature-number">03</div>
             <h3>Veille stratégique</h3>
@@ -93,6 +105,7 @@ export default function Home({ go }) {
             </p>
             <span className="card-link">Explorer →</span>
           </div>
+          <img src="/site-personnel/images/world-topics-map.jpg" alt="" />
         </article>
       </section>
     </main>
