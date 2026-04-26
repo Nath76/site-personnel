@@ -32,3 +32,6 @@ const dispositifs = [
     linkLabel: "Explorer la cartographie",
   },
 ]
+export default function Veille() {
+  return <div>test</div>
+}
