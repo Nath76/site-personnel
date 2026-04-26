@@ -2,7 +2,12 @@ export default function About() {
   return (
     <main className="page-main section about-page">
       <div className="about-grid">
-        <div className="about-photo">Portrait</div>
+       <div className="about-photo">
+  <img
+    src="/site-personnel/images/nathalie-kakpo-portrait.jpg"
+    alt="Nathalie Kakpo"
+  />
+</div>
         <div>
           <p className="eyebrow">À propos</p>
           <h1>Une trajectoire entre recherche, médiation et action publique</h1>
