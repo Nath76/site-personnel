@@ -921,7 +921,7 @@ h1, h2, h3 {
 
 .veille-image-frame {
   width: 100%;
-  height: 285px;
+  height: 240px;
   background: #f7f4fa;
   border-bottom: 1px solid var(--line);
   overflow: hidden;
@@ -949,8 +949,8 @@ h1, h2, h3 {
 /* Correction spécifique PowerBI carte monde */
 .image-map-powerbi {
   object-fit: cover !important;
-  object-position: center center !important;
-  transform: scale(1.65);
+  object-position: center !important;
+  transform: none;
 }
 
 /* CORPS DE CARTE */
