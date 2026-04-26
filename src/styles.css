@@ -1088,3 +1088,80 @@ h1, h2, h3 {
     min-height: 0;
   }
 }
+
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 42px;
+  align-items: center;
+  padding: 44px 0 24px;
+}
+
+.home-hero-copy h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: .94;
+  margin-bottom: 18px;
+}
+
+.home-about-card {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.home-about-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-about-card div {
+  padding: 32px;
+}
+
+.home-about-card p {
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.text-btn {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font-weight: 700;
+  padding: 0;
+}
+
+.feature-card-split {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.feature-card-split .feature-card-body {
+  padding: 34px 20px 34px 34px;
+}
+
+.feature-card-split img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1100px) {
+  .home-hero,
+  .home-about-card,
+  .feature-card-split {
+    grid-template-columns: 1fr;
+  }
+
+  .home-about-card img,
+  .feature-card-split img {
+    height: 220px;
+  }
+}
