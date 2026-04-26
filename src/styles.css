@@ -1368,4 +1368,27 @@ height:260px;
 .home-manifesto{
 padding:42px;
 }
+
+.home-manifesto{
+background:#fff;
+border:1px solid #e6e1ea;
+border-radius:28px;
+padding:54px 78px;
+margin:10px auto 60px;
+box-shadow:var(--shadow);
+}
+
+.manifesto-title{
+text-align:center;
+font-size:.9rem;
+letter-spacing:.18em;
+margin-bottom:38px;
+}
+
+.home-manifesto p{
+max-width:820px;
+margin:0 auto 28px;
+font-size:1.05rem;
+line-height:1.95;
+color:#5e6675;
 }
