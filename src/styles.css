@@ -1165,3 +1165,207 @@ h1, h2, h3 {
     height: 220px;
   }
 }
+.home-page{
+max-width:1200px;
+margin:auto;
+padding:40px 32px 80px;
+}
+
+/* HERO */
+
+.home-hero{
+display:grid;
+grid-template-columns:1fr 430px;
+gap:56px;
+align-items:center;
+margin-bottom:48px;
+}
+
+.home-kicker{
+font-size:.85rem;
+letter-spacing:.18em;
+text-transform:uppercase;
+color:#7d4bc1;
+font-weight:700;
+margin-bottom:18px;
+}
+
+.home-hero h1{
+font-family:"Cormorant Garamond",serif;
+font-size:clamp(3.4rem,6vw,5.6rem);
+line-height:.95;
+margin:0;
+color:#16233a;
+}
+
+.home-hero-image{
+border-radius:26px;
+overflow:hidden;
+box-shadow:0 10px 28px rgba(21,28,45,.08);
+}
+
+.home-hero-image img{
+width:100%;
+height:360px;
+object-fit:cover;
+}
+
+/* MANIFESTE */
+
+.home-manifesto{
+background:#fff;
+border:1px solid #e6e1ea;
+border-radius:28px;
+padding:58px 72px;
+margin:10px auto 60px;
+box-shadow:0 10px 28px rgba(21,28,45,.08);
+}
+
+.home-manifesto .section-kicker{
+text-align:center;
+margin-bottom:18px;
+}
+
+.home-manifesto h2{
+font-family:"Cormorant Garamond",serif;
+font-size:clamp(2.3rem,4vw,3.5rem);
+text-align:center;
+margin-bottom:30px;
+}
+
+.home-manifesto p{
+max-width:760px;
+margin:0 auto 22px;
+line-height:1.85;
+font-size:1.08rem;
+color:#5e6675;
+}
+
+/* TRAJECTOIRE */
+
+.trajectory-card{
+background:#fff;
+border:1px solid #e6e1ea;
+border-radius:28px;
+padding:42px;
+margin-bottom:28px;
+box-shadow:0 10px 28px rgba(21,28,45,.08);
+}
+
+.trajectory-intro h2{
+font-family:"Cormorant Garamond",serif;
+font-size:3rem;
+margin-bottom:30px;
+}
+
+.trajectory-steps{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:28px;
+}
+
+.trajectory-step{
+display:grid;
+grid-template-columns:56px 1fr;
+gap:16px;
+}
+
+.step-icon{
+width:52px;
+height:52px;
+border-radius:50%;
+display:grid;
+place-items:center;
+background:#f2ecfb;
+color:#7d4bc1;
+font-weight:700;
+}
+
+.step-number{
+color:#7d4bc1;
+font-size:.8rem;
+font-weight:700;
+letter-spacing:.12em;
+margin-bottom:8px;
+}
+
+/* BANDE DOUCE */
+
+.home-soft-band{
+margin:26px 0 44px;
+padding:26px 34px;
+border-radius:22px;
+background:linear-gradient(
+90deg,
+rgba(125,75,193,.08),
+rgba(8,24,45,.03)
+);
+}
+
+.home-soft-band p{
+margin:0;
+line-height:1.7;
+}
+
+/* AXES */
+
+.home-axes{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:26px;
+}
+
+.axis-card{
+background:#fff;
+border:1px solid #e6e1ea;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 10px 28px rgba(21,28,45,.08);
+}
+
+.axis-image img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.axis-content{
+padding:28px;
+}
+
+.axis-content p{
+color:#7d4bc1;
+font-weight:700;
+letter-spacing:.12em;
+margin-bottom:10px;
+}
+
+.axis-content h3{
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+margin-bottom:12px;
+}
+
+.axis-content span{
+line-height:1.65;
+color:#5e6675;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+.home-hero,
+.home-axes,
+.trajectory-steps{
+grid-template-columns:1fr;
+}
+
+.home-hero-image img{
+height:260px;
+}
+
+.home-manifesto{
+padding:42px;
+}
+}
