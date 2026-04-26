@@ -811,10 +811,9 @@ h1, h2, h3 {
   margin: auto;
 }
 
-/* Sécurité générale : aucune image Axe 3 ne doit être rognée */
 .veille-page img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 /* HERO */
@@ -858,7 +857,6 @@ h1, h2, h3 {
   width: 100%;
   height: auto;
   object-fit: contain;
-  object-position: center;
 }
 
 /* SECTIONS */
@@ -895,7 +893,7 @@ h1, h2, h3 {
   color: #4e596b;
 }
 
-/* GRILLE CARTES */
+/* CARTES */
 
 .veille-grid {
   display: grid;
@@ -919,24 +917,43 @@ h1, h2, h3 {
   min-height: 100%;
 }
 
-/* CORRECTION MAJEURE : images entières, jamais coupées */
-.veille-card img {
+/* CADRE IMAGE — règle centrale */
+
+.veille-image-frame {
   width: 100%;
-  height: auto;
-  max-height: none;
-  object-fit: contain;
-  object-position: center top;
+  height: 285px;
   background: #f7f4fa;
   border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Pour garder des cartes harmonieuses sans couper les images */
-.veille-card > img {
-  aspect-ratio: 4 / 3;
-  height: auto;
-  object-fit: contain;
-  padding: 0;
+.veille-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
 }
+
+/* Par défaut : image entière visible */
+.image-contain {
+  object-fit: contain;
+}
+
+/* Exception : image qui doit remplir le cadre */
+.image-cover {
+  object-fit: cover;
+}
+
+/* Correction spécifique PowerBI carte monde */
+.image-map-powerbi {
+  object-fit: cover !important;
+  object-position: center center !important;
+  transform: scale(1.65);
+}
+
+/* CORPS DE CARTE */
 
 .veille-card-body {
   padding: 30px;
@@ -978,7 +995,7 @@ h1, h2, h3 {
   content: " →";
 }
 
-/* BLOC LARGE IGN / CARTE */
+/* CARTE LARGE IGN */
 
 .veille-card-wide {
   display: grid;
@@ -986,15 +1003,15 @@ h1, h2, h3 {
   align-items: stretch;
 }
 
-/* CORRECTION MAJEURE : la carte IGN n’est plus coupée */
-.veille-card-wide img {
-  width: 100%;
-  height: 100%;
-  min-height: 460px;
+.veille-card-wide .veille-image-frame {
+  height: auto;
+  min-height: 520px;
+  border-bottom: 0;
+  border-right: 1px solid var(--line);
+}
+
+.veille-card-wide .veille-image-frame img {
   object-fit: contain;
-  object-position: center;
-  background: #f7f4fa;
-  padding: 0;
 }
 
 .veille-card-wide .veille-card-body {
@@ -1019,7 +1036,7 @@ h1, h2, h3 {
   color: #22334a;
 }
 
-/* RESPONSIVE AXE 3 */
+/* RESPONSIVE */
 
 @media (max-width: 1100px) {
   .veille-hero {
@@ -1034,10 +1051,10 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 
-  .veille-card-wide img {
-    height: auto;
-    min-height: 0;
-    object-fit: contain;
+  .veille-card-wide .veille-image-frame {
+    min-height: 360px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
   }
 }
 
@@ -1058,35 +1075,16 @@ h1, h2, h3 {
     font-size: 2.45rem;
   }
 
-  .veille-card > img {
-    aspect-ratio: auto;
+  .veille-image-frame {
     height: auto;
-    object-fit: contain;
+    min-height: 220px;
   }
 
-  .veille-card-wide img {
+  .veille-image-frame img {
     height: auto;
+  }
+
+  .veille-card-wide .veille-image-frame {
     min-height: 0;
   }
-}
-
-.image-cover{
- width:100%;
- height:100%;
- object-fit:cover;
- object-position:center;
-}
-
-.image-contain{
- width:100%;
- height:100%;
- object-fit:contain;
- object-position:center;
-}
-.image-cover.image-map-powerbi {
-  width: 100%;
-  height: 100%;
-  object-fit: cover !important;
-  object-position: center center !important;
-  transform: scale(1.9);
 }
