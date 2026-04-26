@@ -3,6 +3,7 @@ const dispositifs = [
     title: "Observer, analyser, anticiper",
     kicker: "StoryMap interactive",
     image: "/site-personnel/images/storymap-veille.jpg",
+    imageClass: "image-contain",
     text:
       "Une exploration internationale des dispositifs publics de veille, pensée pour rendre lisibles leurs périmètres, leurs méthodes et leurs formes de circulation des connaissances.",
     link: "https://nath76.github.io/story-idea/#tab3",
@@ -12,6 +13,7 @@ const dispositifs = [
     title: "Relire cinq ans de bulletin de veille",
     kicker: "Tableau de bord réflexif",
     image: "/site-personnel/images/powerbi-bulletin-mensuel.jpg",
+    imageClass: "image-contain",
     text:
       "Un dispositif de relecture des contenus produits : volumes, thèmes, focus éditoriaux et évolutions d’un bulletin de veille coanimé pendant cinq ans.",
     link:
@@ -22,6 +24,7 @@ const dispositifs = [
     title: "Visualiser les sujets traités",
     kicker: "Cartographie des contenus",
     image: "/site-personnel/images/powerbi-carte-monde.jpg",
+    imageClass: "image-contain",
     text:
       "Une carte mondiale permettant d’identifier les espaces, pays et régions associés aux sujets suivis dans le bulletin.",
     link:
@@ -35,6 +38,7 @@ const explorations = [
     title: "Cartographier pour arbitrer",
     kicker: "Carte interactive IGN",
     image: "/site-personnel/images/ign-intelligence-territoriale.jpg",
+    imageClass: "image-contain image-map",
     text:
       "Une carte narrative sur l’intelligence territoriale, conçue comme support d’exploration, de comparaison et d’aide à la réflexion.",
     link:
@@ -48,6 +52,7 @@ const formes = [
     title: "Digest de veille",
     kicker: "Application web",
     image: "/site-personnel/images/digest-veille.jpg",
+    imageClass: "image-contain",
     text:
       "Une forme éditoriale destinée à sélectionner, hiérarchiser et reformuler des signaux pour les rendre exploitables dans une logique d’action.",
   },
@@ -56,6 +61,7 @@ const formes = [
       "Les îles françaises dans les coopérations de recherche de l’océan Indien",
     kicker: "Analyse courte",
     image: "/site-personnel/images/cep-ocean-indien.jpg",
+    imageClass: "image-contain",
     text:
       "Une publication synthétique qui présente l’essentiel des réflexions sur les coopérations de recherche agricoles et agroalimentaires dans l’océan Indien, selon une approche prospective, stratégique ou évaluative.",
     link:
@@ -67,7 +73,13 @@ const formes = [
 function ProjectCard({ item, wide = false }) {
   return (
     <article className={`veille-card ${wide ? "veille-card-wide" : ""}`}>
-      <img src={item.image} alt={item.title} />
+      <div className="veille-image-frame">
+        <img
+          src={item.image}
+          alt={item.title}
+          className={item.imageClass || "image-contain"}
+        />
+      </div>
 
       <div className="veille-card-body">
         <p className="project-kicker">{item.kicker}</p>
