@@ -1459,3 +1459,19 @@ font-weight:500;
   border-radius: 16px !important;
   overflow: hidden !important;
 }
+
+.book-cover{
+background:linear-gradient(135deg,#efe8fa,#ddd0f3);
+height:150px;
+border-radius:16px;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+
+font-family:"Cormorant Garamond",serif;
+font-size:1.45rem;
+font-style:italic;
+line-height:1.15;
+color:#16233a;
+}
