@@ -35,12 +35,13 @@ export default function Home() {
       alt: "Paysage urbain",
     },
     {
-      number: "02",
-      title: "Médiation & dispositifs",
-      text: "Techniques, cognition distribuée et production sociale du sens.",
-      image: image: "/site-personnel/images/dispositif-network.jpg",
-      alt: "Visualisation autour de la médiation",
-    },
+{
+  number: "02",
+  title: "Médiation & dispositifs",
+  text: "Techniques, cognition distribuée et production sociale du sens.",
+  image: "/site-personnel/images/dispositif-network.jpg",
+  alt: "Visualisation autour de la médiation",
+},
     {
       number: "03",
       title: "Veille stratégique",
