@@ -3,59 +3,59 @@ const articles = [
     title: "L’islam des filles",
     image: "/site-personnel/images/article-islam-filles.jpg",
     link: "https://www.persee.fr/doc/diver_1769-8502_2005_num_142_1_2459",
-    meta: "Article · Diversité · 2005"
+    meta: "Article · Diversité · 2005",
   },
   {
     title: "Relégation scolaire et recherche de requalification par l'islam",
     image: "/site-personnel/images/article-relegation-islam.jpg",
     link: "https://shs.cairn.info/revue-societes-contemporaines-2005-3-page-139?lang=fr",
-    meta: "Article · Sociétés contemporaines · 2005"
+    meta: "Article · Sociétés contemporaines · 2005",
   },
   {
     title: "Ségrégation(s), culture et socialisation",
     image: "/site-personnel/images/article-segregations.jpg",
     link: "https://www.persee.fr/doc/diver_1769-8502_2011_num_164_1_3394",
-    meta: "Article · Diversité · 2011"
+    meta: "Article · Diversité · 2011",
   },
   {
     title: "Lyon metropolis: economic development and social division of space",
     image: null,
+    coverText: "Lyon metropolis",
     link: "#",
-    meta: "Article · Territorio"
-  }
-]
+    meta: "Article · Territorio",
+  },
+];
 
 const chapitres = [
   {
     title: "Émeutes urbaines et protestations",
-    image: "/site-personnel/images/ouvrage-emeutes.jpg"
+    image: "/site-personnel/images/ouvrage-emeutes.jpg",
   },
   {
     title: "Communauté d'expérience et diversité des trajectoires",
-    image: "/site-personnel/images/ouvrage-acteurs-faibles.jpg"
-  }
-]
+    image: "/site-personnel/images/ouvrage-acteurs-faibles.jpg",
+  },
+];
 
 const internationalWork = {
   title: "Social Innovations for Social Cohesion",
   subtitle: "Geneva — Introduction",
   imageCover: "/site-personnel/images/social-innovations-cover.jpg",
   imageInside: "/site-personnel/images/geneva-introduction.jpg",
-  link: "https://wilcoproject.com/book/chapters/geneva-introduction/"
-}
+  link: "https://wilcoproject.com/book/chapters/geneva-introduction/",
+};
 
 export default function Sociologie() {
   return (
     <main className="page-main section publications-page">
-
       <div className="page-head publications-head">
         <p className="eyebrow">Axe 1</p>
 
         <h1>Publications — Sociologie urbaine</h1>
 
         <p>
-          Travaux sur les socialisations urbaines, les espaces populaires,
-          les formes de relégation, la religion et les trajectoires de
+          Travaux sur les socialisations urbaines, les espaces populaires, les
+          formes de relégation, la religion et les trajectoires de
           requalification.
         </p>
 
@@ -65,9 +65,11 @@ export default function Sociologie() {
             "Migrations",
             "Islam en France",
             "Ségrégation",
-            "Politiques urbaines"
-          ].map(tag => (
-            <span key={tag} className="tag">{tag}</span>
+            "Politiques urbaines",
+          ].map((tag) => (
+            <span key={tag} className="tag">
+              {tag}
+            </span>
           ))}
         </div>
       </div>
@@ -110,13 +112,15 @@ export default function Sociologie() {
         </div>
 
         <div className="publication-list">
-          {articles.map(article => (
+          {articles.map((article) => (
             <article className="publication-item" key={article.title}>
-             {item.image ? (
-  <img src={item.image} alt={item.title} />
-) : (
-  <div className="book-cover">{item.coverText}</div>
-)}
+              {article.image ? (
+                <img src={article.image} alt={article.title} />
+              ) : (
+                <div className="book-cover">
+                  {article.coverText || article.title}
+                </div>
+              )}
 
               <div>
                 <p className="pub-type">{article.meta}</p>
@@ -142,8 +146,8 @@ export default function Sociologie() {
           <h2>Chapitres d’ouvrages</h2>
         </div>
 
-               <div className="book-shelf">
-          {chapitres.map(item => (
+        <div className="book-shelf">
+          {chapitres.map((item) => (
             <article key={item.title} className="book-shelf-item">
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>
@@ -195,7 +199,6 @@ export default function Sociologie() {
           </div>
         </div>
       </section>
-
     </main>
-  )
+  );
 }
