@@ -73,19 +73,19 @@ Fil directeur
 </p>
 
 <p>
-Mon travail participe à l’équipement cognitif des politiques publiques.
+Mon travail participe à l’<strong>équipement cognitif des politiques publiques</strong>.
 La veille y est conçue comme une activité d’interprétation, de mise en
 relation et de problématisation orientée vers l’action. Elle vise à
 attirer l’attention des décideurs sur certaines évolutions de
-l’environnement des politiques publiques — signaux émergents,
+<strong>l’environnement des politiques publiques</strong> — signaux émergents,
 controverses, déplacements d’acteurs, transformations sociales — et à
 produire sur ces dynamiques des savoirs opératoires pour aider la
 décision et concourir à l’efficacité de l’action publique.
 </p>
 
 <p>
-Ce travail s’appuie sur des dispositifs numériques — cartographies,
-tableaux de bord, outils de veille, formes éditoriales — conçus comme
+Ce travail s’appuie sur des dispositifs sociotechniques — cartographies,
+tableaux de bord, outils de veille— conçus comme
 des équipements cognitifs rendant les phénomènes plus visibles,
 comparables et discutables. Cette activité relève d’une double
 médiation : éclairer les décideurs sur les évolutions des sociétés et,
@@ -95,10 +95,10 @@ et contenus de l’action publique.
 
 <p>
 Elle contribue ainsi à une activité d’influence entendue non comme
-action persuasive, mais comme circulation orientée de connaissances :
+action persuasive, mais comme une circulation orientée de connaissances :
 faire remonter des évolutions sociales vers les décideurs, mettre en
-discussion certains enjeux dans l’espace public et rendre plus
-intelligibles les contenus de l’action publique.
+discussion certains enjeux dans l’espace public et <strong>rendre plus
+intelligibles les contenus de l’action publique</strong>.
 </p>
 
 </section>
