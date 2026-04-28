@@ -112,7 +112,11 @@ export default function Sociologie() {
         <div className="publication-list">
           {articles.map(article => (
             <article className="publication-item" key={article.title}>
-              <img src={article.image} alt={article.title} />
+             {item.image ? (
+  <img src={item.image} alt={item.title} />
+) : (
+  <div className="book-cover">{item.coverText}</div>
+)}
 
               <div>
                 <p className="pub-type">{article.meta}</p>
