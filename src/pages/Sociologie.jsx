@@ -19,7 +19,7 @@ const articles = [
   },
   {
     title: "Lyon metropolis: economic development and social division of space",
-    image: "/site-personnel/images/article-territorio.jpg",
+    image: null,
     link: "#",
     meta: "Article · Territorio"
   }
