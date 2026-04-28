@@ -34,7 +34,6 @@ export default function Home() {
       image: "/site-personnel/images/hero-city.jpg",
       alt: "Paysage urbain",
     },
-    {
 {
   number: "02",
   title: "Médiation & dispositifs",
