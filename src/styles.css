@@ -1439,3 +1439,23 @@ font-style:italic;
 line-height:1.25;
 font-weight:500;
 }
+
+.publication-item .book-cover{
+  background: linear-gradient(135deg, #efe8fa 0%, #e3d8f5 100%) !important;
+  color: #16233a !important;
+  padding: 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: left !important;
+
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 1.25rem !important;
+  font-style: italic !important;
+  line-height: 1.2 !important;
+  font-weight: 500 !important;
+
+  min-height: 150px !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
