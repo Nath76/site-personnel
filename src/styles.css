@@ -1606,3 +1606,69 @@ img {
     margin-bottom: 4px;
   }
 }
+
+/* =========================
+NAV RESPONSIVE
+========================= */
+
+@media (max-width: 760px) {
+  .nav,
+  nav,
+  header nav {
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav a,
+  nav a,
+  header nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 12px;
+    font-size: 0.9rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  header,
+  .site-header,
+  .header {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-inline: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav,
+  nav,
+  header nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar,
+  nav::-webkit-scrollbar,
+  header nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a,
+  nav a,
+  header nav a {
+    flex: 0 0 auto;
+    font-size: 0.84rem;
+    padding: 8px 10px;
+  }
+}
